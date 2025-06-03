@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 body {
@@ -163,20 +163,72 @@ header{
 
 
 /* Featured products */
-section.bg-dark {
-  font-family: 'Poppins', sans-serif;
+.bg {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 60px 20px;
 }
 
-.text-center img {
+
+.featured-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
+  background-color: #0f0f0f;
+  
 }
 
-.text-center:hover img {
-  transform: scale(1.1);
+.product-card img {
+  display: block;
+  margin: 0 auto 10px;
 }
 
-.fw-bold {
-  color: #ffffff;
+.product-card .price {
+  font-weight: bold;
+}
+
+.product-card .old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+/* Size Variants */
+.product-card.small img {
+  width: 100px;
+}
+
+.product-card.small {
+  font-size: 14px;
+  
+}
+
+.product-card.medium img {
+  width: 150px;
+}
+
+.product-card.medium {
+  font-size: 15px;
+}
+
+.product-card.large img {
+  width: 400px;
+}
+
+.product-card.large {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 
@@ -228,7 +280,6 @@ section.bg-dark {
   background-color: #1b1b1b;
   color: white;
   padding: 20px;
-  border-radius: 12px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #333;
@@ -263,7 +314,7 @@ section.bg-dark {
   font-size: 14px;
   color: #bbb;
   margin-bottom: 12px;
-  height: 36px; /* Consistent spacing even if some products have longer names */
+  height: 36px; 
   overflow: hidden;
 }
 
@@ -297,6 +348,56 @@ section.bg-dark {
   background-color: darkred;
 }
 
+.browse-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  border: 1px solid #333;
+  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.browse-all:hover {
+  transform: translateY(-8px);
+  background: #1a1a1a;
+}
+
+.browse-content {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.browse-content i {
+  font-size: 10px;
+  color: red;
+  margin-bottom: 10px;
+}
+.browse-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.browse-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  
+}
+
+.browse-button:hover {
+  background-color: darkred;
+  box-shadow:0 6px 16px rgba(255, 0, 0, 0.3);
+}
+
+
 
 /* our advantages section */
 
@@ -305,6 +406,7 @@ section.bg-dark {
   color: white;
   text-align: center;
   padding: 40px 20px;
+  
 }
 
 .advantages-section h2 {
@@ -327,12 +429,16 @@ section.bg-dark {
   border-radius: 10px;
   color: #fff;
   font-size: 0.9rem;
+  display: flex;
+
 }
 
 .advantage-box i {
   font-size: 24px;
   margin-bottom: 10px;
   color: red;
+  padding-top: 10px;
+  padding-right: 20px;
 }
 
 /* footer section */
