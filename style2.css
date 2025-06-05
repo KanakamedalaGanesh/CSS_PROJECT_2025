@@ -26,21 +26,13 @@ body {
 }
 
 .tab {
-  flex: 1;
   text-align: center;
   padding: 12px;
-  background: #222;
   cursor: pointer;
-  color: #aaa;
+  color: white;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
   transition: 0.3s;
-}
-
-#signupTab:checked ~ .tabs label[for="signupTab"],
-#loginTab:checked ~ .tabs label[for="loginTab"] {
-  background: red;
-  color: #fff;
 }
 
 /* Form styles */
@@ -48,6 +40,7 @@ body {
   display: none;
   flex-direction: column;
 }
+
 
 input {
   width: 100%;
@@ -71,6 +64,7 @@ input {
   cursor: pointer;
 }
 
+
 .social-login {
   display: flex;
   justify-content: space-between;
@@ -87,9 +81,14 @@ input {
   cursor: pointer;
 }
 
+.social-login button:hover {
+  background: #333;
+}
+
 .facebook { background: #3b5998; }
 .google { background: #db4437; }
 .twitter { background: #1da1f2; }
+
 
 hr {
   margin: 20px 0;
@@ -98,7 +97,7 @@ hr {
 
 .or-text {
   text-align: center;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 /* Toggle visibility using :checked */
