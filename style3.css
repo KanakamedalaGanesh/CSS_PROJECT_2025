@@ -53,6 +53,7 @@ header a {
 .fas fa-shopping-cart {
     color: white;
     font-size: 10px;
+    
 }
 .fas fa-user {
     color: white;
@@ -89,7 +90,7 @@ header a {
 }
 
 .item {
-  background: #1e1e1e;
+  background: black;
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -191,6 +192,10 @@ header a {
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: darkred;
 }
 
 
