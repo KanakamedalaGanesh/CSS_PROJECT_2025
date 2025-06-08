@@ -41,6 +41,10 @@ body {
   flex-direction: column;
 }
 
+.para {
+  position: relative;
+  bottom: 10px;
+}
 
 input {
   width: 100%;
@@ -62,6 +66,10 @@ input {
   font-size: 16px;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: darkred;
 }
 
 
