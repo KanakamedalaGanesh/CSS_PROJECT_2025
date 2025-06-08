@@ -10,14 +10,32 @@
 </head>
 <body>
   
- <header>
-        <a href="./Home.html"><h3 class="main-header">Tech-Shop</h3></a>
-     <nav class="nav-icons" >
-         <a href="#" aria-label="Search" title="Search"><i class="fas fa-search"></i></a>
-         <a href="./cart.html" aria-label="Cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
-         <a href="./Registration.html" aria-label="Profile" title="Profile"><i class="fas fa-user"></i></a>
-     </nav>
-    </header>
+      <div class="wholepage">
+    <div class="header">
+            <div class="heading">
+                 <a href="./Home.html"><h2>Tech-Shop</h2></a>
+            </div>
+            <div class="navbar-icons">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass" title="search"></i>
+                </div>
+                <div class="cart">
+                     <div class="number"><p>4</p></div>
+                     <a href="./cart.html"  title="cart"><i class="fa-solid fa-cart-shopping"></i></a>    
+                </div>
+                <div class="profile-icon">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="profile-card">
+                        <h2>Hello!</h2>
+                        <p>Access account and manage orders</p><br>
+                        <div class="btn"><a href="./Registration.html"><button>Login / Signup</button></a></div><br><hr><br>
+                        <p>Please Login</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- main container section -->
 
   <main class="main-container">
     <section class="cart-items">
@@ -31,7 +49,7 @@
           </div>
           <div class="quantity">
             <button>-</button>
-            <span>1</span>
+            <span class="spancolor">1</span>
             <button>+</button>
           </div>
         </div>
@@ -49,7 +67,7 @@
           </div>
           <div class="quantity">
             <button>-</button>
-            <span>1</span>
+            <span class="spancolor">1</span>
             <button>+</button>
           </div>
         </div>
@@ -67,7 +85,7 @@
           </div>
           <div class="quantity">
             <button>-</button>
-            <span>1</span>
+            <span class="spancolor">1</span>
             <button>+</button>
           </div>
         </div>
@@ -85,7 +103,7 @@
           </div>
           <div class="quantity">
             <button>-</button>
-            <span>1</span>
+            <span class="spancolor">1</span>
             <button>+</button>
           </div>
         </div>
@@ -101,15 +119,17 @@
       <p>Discount <span class="discount">- ₹10,132</span></p>
       <p>Delivery <span class="free">Free</span></p>
       <hr>
-      <h3>Total Price <span>₹12,846</span></h3>
+      <h3>Total Price <span>₹12,846</span></h3><br>
       <button class="checkout-btn">Checkout</button>
     </aside>
   </main>
 
+<!-- footer section -->
+
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-column">
-      <h3>Tech-Shop</h3>
+      <h2>Tech-Shop</h2><br>
       <p>Subscribe to our Email alerts to receive early discount offers,and new products info.</p><br>
       <form class="subscribe-form">
         <input type="email" placeholder="Email Address*" required>

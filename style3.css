@@ -7,81 +7,150 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
+  background-color: #0f0f0f;
   color: #eee;
 }
 
-.main-header {
-    background-color:black;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-   
-}
-
-
-header{
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.header{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+}
+.heading h2{
+    margin-left: 30px;
+    color: white;
 }
 
-header a {
+.heading a {
   text-decoration: none;
 }
 
-.nav-icons {
-   
-    color: white;
-    padding: 10px 10px;
+.navbar-icons{
+    display: flex;
+    gap: 60px;
+    margin-right: 50px;
+    font-size: large;
+    margin-top: 10px;
 }
-.nav-icons a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+.hovering{
+    display: none;
 }
-.nav-icons a:hover {
-    background-color: #575757;
-}
-.fas fa-search {
-    color: white;
-    font-size: 10px;
-}
-.fas fa-shopping-cart {
-    color: white;
-    font-size: 10px;
+.profile-card{
+    display: none;
+    z-index: 1000;
+    background-color: black;
     
 }
-.fas fa-user {
+.searchbar:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.cart:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+
+.fa-solid {
+  color: white;
+  background-color: black;
+}
+
+.profile-icon:hover .profile-card{
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 250px;  
+    border: 1px solid gray;   
+}
+.profile-card button{
+    background-color: gray;
     color: white;
-    font-size: 10px;
+    height: 40px;
+    width:180px ; 
 }
-
-
-.cart-icon {
+.btn{
   position: relative;
-  font-size: 1.5rem;
-  color: #fff;
+  bottom: 0px;
 }
 
-.cart-count {
-  background: red;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  position: absolute;
-  top: -10px;
-  right: -10px;
+.profile-card{
+   padding-left: 20px;
+   padding-top: 10px;
 }
+
+.searchbar{
+    position: relative;
+}
+.cart{
+    position: relative;
+    bottom: 20px;
+}
+.fa-solid fa-cart-shopping {
+  color: black;
+  background-color: black;
+}
+
+.profile-icon{
+    position: relative;
+}
+.number{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    top: 8px;
+    
+}
+.number p{
+    position: relative;
+    bottom: 5px;
+}
+
+ .smimage{
+     width: 400px;
+    height: 200px;
+ }
+ .smimage img{
+     width:150px;
+    height:150px;
+    position: relative;
+    left: 50px;
+ }
+.image1{
+    display: flex;
+}
+
+.cartbuttons{
+    display: flex;
+    width: fit-content;
+    border: 1px solid gray;
+    position: relative;
+    top: 30px;
+    
+}
+
+/* Main container section */
 
 .main-container {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   flex-wrap: wrap;
+  background-color: #0f0f0f;
 }
 
 .cart-items {
@@ -144,6 +213,10 @@ header a {
   font-size: 1.1rem;
 }
 
+.spancolor {
+  color: red;
+}
+
 .delete-icon {
   color: #999;
   cursor: pointer;
@@ -198,9 +271,10 @@ header a {
   background-color: darkred;
 }
 
+/* Footer section */
 
 .footer {
-  background-color: #0d0d0d;
+  background-color: #0f0f0f;
   color: #ccc;
   padding: 40px 20px;
   font-size: 0.9rem;
