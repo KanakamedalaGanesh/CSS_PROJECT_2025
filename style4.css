@@ -5,97 +5,144 @@
 }
 
 body {
-  background-color: #111111;
-  color: #e0e0e0;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #eee;
 }
 
-a {
-  color: inherit;
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.heading h2{
+    margin-left: 30px;
+    color: white;
+}
+
+.heading a {
   text-decoration: none;
 }
 
-.main-header {
-    background-color:black;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;  
-}
-
-.main-header a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-
-header{
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.navbar-icons{
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
+    margin-right: 50px;
+    font-size: large;
+    margin-top: 10px;
 }
-
-.nav-icons {
-   
+.hovering{
+    display: none;
+}
+.profile-card{
+    display: none;
+    z-index: 1000;
+    background-color: black;
+    
+}
+.searchbar:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.cart:hover .hovering{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+}
+.profile-icon:hover .profile-card{
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 250px;  
+    border: 1px solid gray;   
+}
+.profile-card button{
+    background-color: gray;
     color: white;
-    padding: 10px 10px;
+    height: 40px;
+    width:180px ; 
 }
-.nav-icons a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-.nav-icons a:hover {
-    background-color: #575757;
-}
-.fas fa-search {
-    color: white;
-    font-size: 10px;
-}
-.fas fa-shopping-cart {
-    color: white;
-    font-size: 10px;
-}
-.fas fa-user {
-    color: white;
-    font-size: 10px;
-}
-
-.cart-icon {
+.btn{
   position: relative;
-  font-size: 1.5rem;
-  color: #fff;
+  bottom: 0px;
 }
 
-.cart-count {
-  background: red;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  position: absolute;
-  top: -10px;
-  right: -10px;
+.profile-card{
+    padding-left: 20px;
+   padding-top: 10px;
 }
 
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #d3d3d3;
+.searchbar{
+    position: relative;
+}
+.cart{
+    position: relative;
+    bottom: 20px;
 }
 
-.logo span {
-  color: #5f9df7;
+.fa-solid {
+ color:white;
+ background-color: black;
+}
+.profile-icon{
+    position: relative;
+}
+.number{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    top: 8px;
+    
+}
+.number p{
+    position: relative;
+    bottom: 5px;
 }
 
+ .smimage{
+     width: 400px;
+    height: 200px;
+ }
+ .smimage img{
+     width:150px;
+    height:150px;
+    position: relative;
+    left: 50px;
+ }
+.image1{
+    display: flex;
+}
+
+.cartbuttons{
+    display: flex;
+    width: fit-content;
+    border: 1px solid gray;
+    position: relative;
+    top: 30px;
+    
+}
 .header-actions i {
   font-size: 18px;
   margin-left: 20px;
   cursor: pointer;
 }
+
+/* Main container section */
 
 .product-container {
   display: flex;
@@ -172,7 +219,7 @@ h1 {
   color: #999;
   text-decoration: line-through;
   position: relative;
-  top: -23px;
+  top: -15px;
   left: 110px;
   font-weight: bold;
 }
@@ -191,15 +238,17 @@ h1 {
   position: relative;
   width: 150px;
   height: 40px;
-  background-color: darkgreen;
+  background-color: green;
   color: white;
+  font-size: medium;
+  font-weight: bold;
   left: 350px;
   bottom: 70px;
   border-radius: 5px;
 }
 
 #btn0:hover {
-  background-color: #00ff7f;
+  background-color: darkgreen;
 }
 
 .offers h4 {
@@ -286,6 +335,7 @@ h1 {
   font-weight: 600;
 }
 
+
 /* Related products section */
 
 .Related-products {
@@ -293,8 +343,8 @@ h1 {
   background-color: #0f0f0f;
 }
 
-.section-title {
-  font-size: 32px;
+.title {
+  font-size: 25px;
   text-align: center;
   margin-bottom: 30px;
   color: white;
@@ -379,7 +429,8 @@ h1 {
   background-color: darkred;
 }
 
-/* our advantages section */
+
+/* Our advantages section */
 
 .advantages-section {
   background-color: #0f0f0f;
@@ -404,7 +455,7 @@ h1 {
 .advantage-box {
   flex: 1 1 200px;
   max-width: 250px;
-  background-color: black;
+  background-color: #0f0f0f;
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -421,7 +472,7 @@ h1 {
   padding-right: 20px;
 }
 
-/* footer section */
+/* Footer section */
 
 .footer {
   background-color: #0d0d0d;
