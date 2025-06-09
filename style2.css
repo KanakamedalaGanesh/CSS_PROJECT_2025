@@ -1,4 +1,4 @@
-body {
+.body1 {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -35,10 +35,22 @@ body {
   transition: 0.3s;
 }
 
+.cross {
+  color: #fff;
+  position: relative;
+  left: 430px;
+  bottom: 40px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
 /* Form styles */
 .form {
   display: none;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .para {
